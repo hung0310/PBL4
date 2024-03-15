@@ -1,0 +1,12 @@
+.Main-Flow {
+	-fx-background-color: #fff;
+}
+
+.Main-btn {
+	-fx-background-color: #00a8ff;
+}
+
+.Main-btn:hover {
+	-fx-background-color: #0fbcf9;
+	-fx-text-fill: #fff;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormAddUserController">
+   <children>
+      <AnchorPane prefHeight="562.0" prefWidth="737.0">
+         <children>
+            <AnchorPane layoutY="103.0" prefHeight="458.0" prefWidth="752.0">
+               <children>
+                  <TableView fx:id="tbShowInfoUser" layoutX="-1.0" layoutY="-5.0" prefHeight="461.0" prefWidth="752.0">
+                    <columns>
+                      <TableColumn fx:id="Column_ID" prefWidth="126.4000244140625" text="ID User" />
+                      <TableColumn fx:id="Column_Email" prefWidth="176.79998779296875" text="Email" />
+                        <TableColumn fx:id="Column_Password" prefWidth="127.20001220703125" text="Password" />
+                        <TableColumn fx:id="Column_PhoneNumber" prefWidth="125.5999755859375" text="Phone number" />
+                        <TableColumn fx:id="Column_Gender" prefWidth="90.4000244140625" text="Gender" />
+                        <TableColumn fx:id="Column_Role" prefWidth="105.5999755859375" text="Role" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnSelectFile" layoutX="386.0" layoutY="43.0" mnemonicParsing="false" onAction="#btnClicked_SelectFile" prefHeight="24.0" prefWidth="70.0" text="Select" />
+            <Button fx:id="btnAddUser" layoutX="648.0" layoutY="42.0" mnemonicParsing="false" onAction="#btnClicked_AddUser" prefHeight="24.0" prefWidth="70.0" text="Add" />
+            <TextField fx:id="txtShowDirectionFile" layoutX="41.0" layoutY="42.0" prefHeight="26.0" prefWidth="326.0" promptText="..............." />
+            <Button fx:id="btnShow" layoutX="556.0" layoutY="42.0" mnemonicParsing="false" onAction="#btnClicked_Show" prefHeight="24.0" prefWidth="70.0" text="Show" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

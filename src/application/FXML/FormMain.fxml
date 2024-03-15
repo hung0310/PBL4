@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormMainController">
+   <children>
+      <AnchorPane prefHeight="566.0" prefWidth="910.0">
+         <children>
+            <Separator layoutX="-1.0" layoutY="79.0" prefHeight="0.0" prefWidth="938.0" AnchorPane.leftAnchor="0.6000000000000227" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="79.0" />
+            <AnchorPane prefHeight="87.0" prefWidth="683.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="btnUser" fitHeight="49.0" fitWidth="39.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/user.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnHome" layoutX="609.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnClickedHome" opacity="0.0" prefHeight="57.0" prefWidth="60.0" />
+                  <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="627.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="31.200000000000045" AnchorPane.topAnchor="34.0">
+                     <image>
+                        <Image url="@../icon/home.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="txtNameUser" layoutX="108.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name user" wrappingWidth="172.43816375732422">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtRole" layoutX="14.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" wrappingWidth="85.2381591796875">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <VBox layoutY="81.0" prefHeight="488.0" prefWidth="942.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.0">
+               <children>
+                  <FlowPane fx:id="flowPane_btn" hgap="50.0" prefHeight="522.0" prefWidth="942.0" styleClass="Main-Flow" stylesheets="@../CSS/MainDesign.css" vgap="70.0">
+                     <children>
+                        <Button fx:id="btnGroup" mnemonicParsing="false" onAction="#btnClickedGroup" prefHeight="155.0" prefWidth="155.0" styleClass="Main-btn" stylesheets="@../CSS/MainDesign.css" text="Add group">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_Group" mnemonicParsing="false" onAction="#btnClicked_Group" prefHeight="155.0" prefWidth="155.0" styleClass="Main-btn" stylesheets="@../CSS/MainDesign.css" text="Button">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="30.0" left="80.0" right="30.0" top="50.0" />
+                     </padding>
+                  </FlowPane>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="842.0" layoutY="1.0" prefHeight="87.0" prefWidth="100.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <children>
+                  <Text layoutX="25.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Setting" wrappingWidth="49.5999755859375">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnSetting" layoutY="1.0" mnemonicParsing="false" onAction="#btnClickedSetting" opacity="0.0" prefHeight="79.0" prefWidth="100.0" />
+                  <ImageView fx:id="imgview_Setting" fitHeight="39.0" fitWidth="39.0" layoutX="27.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/icons8-setting-50.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pnSetting" layoutX="683.0" layoutY="5.0" prefHeight="79.0" prefWidth="155.0" visible="false" AnchorPane.rightAnchor="103.40000000000003" AnchorPane.topAnchor="5.0">
+               <children>
+                  <Button fx:id="btnChangePassword" layoutX="8.0" layoutY="8.0" mnemonicParsing="false" onAction="#btnClicked_ChangePassword" prefHeight="32.0" prefWidth="144.0" text="Change password" />
+                  <Button fx:id="btnLogout" layoutX="8.0" layoutY="40.0" mnemonicParsing="false" onAction="#btnClicked_Logout" prefHeight="32.0" prefWidth="144.0" text="Logout" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

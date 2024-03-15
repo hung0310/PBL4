@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormAdminController">
+   <children>
+      <BorderPane fx:id="borderPaneMain" prefHeight="562.0" prefWidth="730.0">
+         <left>
+            <AnchorPane prefHeight="562.0" prefWidth="196.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnAddAccount" layoutX="1.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnClickedAccount" opacity="0.16" prefHeight="56.0" prefWidth="196.0" />
+                  <Label layoutX="48.0" layoutY="295.0" prefHeight="27.0" prefWidth="102.0" text="Add Account">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnLogout" layoutX="1.0" layoutY="506.0" mnemonicParsing="false" onAction="#btnLogout" opacity="0.34" prefHeight="56.0" prefWidth="196.0" />
+                  <Label layoutX="52.0" layoutY="527.0" prefHeight="27.0" prefWidth="53.0" text="Logout">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="14.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/icons8-logout-32.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnFeedback" layoutX="1.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnClickedFeedback" opacity="0.16" prefHeight="56.0" prefWidth="196.0" />
+                  <Label layoutX="68.0" layoutY="239.0" prefHeight="27.0" prefWidth="74.0" text="Feedback">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="QuantityFeedback" layoutX="170.0" layoutY="225.0" prefHeight="19.0" prefWidth="27.0" text="0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="56.0" fitWidth="54.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/icons8-admin-64.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="79.0" layoutY="27.0" prefHeight="27.0" prefWidth="102.0" text="Hello Admin">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="197.0" orientation="VERTICAL" prefHeight="562.0" prefWidth="0.0" />
+               </children>
+            </AnchorPane>
+         </left></BorderPane>
+   </children>
+</StackPane>

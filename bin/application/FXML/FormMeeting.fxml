@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormMeetingController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="pnChatBox" layoutX="462.0" prefHeight="592.0" prefWidth="487.0" styleClass="gradien" stylesheets="@../CSS/MeetingDesign.css" visible="false" AnchorPane.bottomAnchor="0.9999999999999858" AnchorPane.rightAnchor="0.4000000000000341" AnchorPane.topAnchor="0.6000000000000227">
+               <children>
+                  <TextArea fx:id="messageArea" editable="false" layoutX="9.0" layoutY="8.0" prefHeight="491.0" prefWidth="470.0" AnchorPane.bottomAnchor="95.19999999999999" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="7.800000000000011" AnchorPane.topAnchor="8.0" />
+                  <TextArea fx:id="messageArea1" layoutX="8.0" layoutY="521.0" prefHeight="58.0" prefWidth="390.0" stylesheets="@../CSS/MeetingDesign.css" AnchorPane.bottomAnchor="10.999999999999979" AnchorPane.rightAnchor="88.80000000000001" />
+                  <Button fx:id="btnSend" layoutX="413.0" layoutY="521.0" mnemonicParsing="false" onAction="#btnClicked_Send" prefHeight="58.0" prefWidth="65.0" AnchorPane.bottomAnchor="10.999999999999979" AnchorPane.rightAnchor="8.599999999999994" />
+                  <ImageView fx:id="img_screen1" fitHeight="29.0" fitWidth="111.0" layoutX="431.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/icons8-send-mail-24.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="491.0" prefWidth="948.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="imgViewMeeting" fitHeight="491.0" fitWidth="948.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.3999999999999773" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <Separator layoutY="497.0" prefHeight="7.0" prefWidth="950.0" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <AnchorPane fx:id="pnHandle" layoutX="1.0" layoutY="500.0" prefHeight="91.0" prefWidth="948.0" AnchorPane.bottomAnchor="0.7999999999999545">
+               <children>
+                  <Button fx:id="btnChat" layoutX="127.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnClicked_Chat" prefHeight="58.0" prefWidth="111.0" styleClass="Meeting-btn" stylesheets="@../CSS/MeetingDesign.css" />
+                  <Button fx:id="btnShare" layoutX="288.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnClicked_Share" prefHeight="58.0" prefWidth="111.0" styleClass="Meeting-btn" stylesheets="@../CSS/MeetingDesign.css" AnchorPane.bottomAnchor="16.799999999999997" />
+                  <Button fx:id="btnMicro" layoutX="458.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnClicked_Micro" prefHeight="58.0" prefWidth="111.0" styleClass="Meeting-btn" stylesheets="@../CSS/MeetingDesign.css" AnchorPane.bottomAnchor="16.799999999999997" />
+                  <Button fx:id="btnLeave" layoutX="783.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnClicked_Leave" prefHeight="58.0" prefWidth="111.0" styleClass="Meeting-btn" stylesheets="@../CSS/MeetingDesign.css" />
+                  <Button fx:id="btnSpeaker" layoutX="618.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnClicked_speaker" prefHeight="58.0" prefWidth="111.0" styleClass="Meeting-btn" stylesheets="@../CSS/MeetingDesign.css" />
+                  <Button fx:id="StopSpeaker" layoutX="618.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnClicked_StopSpeaker" prefHeight="58.0" prefWidth="111.0" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="stopMic1" layoutX="458.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnStop_Micro" prefHeight="58.0" prefWidth="111.0" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="29.0" fitWidth="111.0" layoutX="824.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/icons8-outgoing-call-50.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_mic" fitHeight="29.0" fitWidth="111.0" layoutX="499.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/icons8-mic-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="111.0" layoutX="659.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/icons8-speaker-24.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_screen" fitHeight="29.0" fitWidth="111.0" layoutX="329.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/icons8-share-screen-24.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="111.0" layoutX="168.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/icons8-chat-30.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane fx:id="button_micAndScreen" layoutY="4.0" prefHeight="83.0" prefWidth="120.0">
+                     <children>
+                        <Button fx:id="Block_mic_sv" layoutX="25.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnBlockMic_sv" prefHeight="36.0" prefWidth="74.0" styleClass="Meeting-btn" stylesheets="@../CSS/MeetingDesign.css" />
+                        <Button fx:id="BlockScreen_Sv" layoutX="25.0" layoutY="45.0" mnemonicParsing="false" onAction="#btnBlockScreen_sv" prefHeight="36.0" prefWidth="74.0" styleClass="Meeting-btn" stylesheets="@../CSS/MeetingDesign.css" />
+                        <ImageView fx:id="imgBlockScreen" fitHeight="29.0" fitWidth="29.0" layoutX="48.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/block_screen.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="icon_block_sv" fitHeight="29.0" fitWidth="29.0" layoutX="48.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/block_mic.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fx:id="img_block_screen" fitHeight="29.0" fitWidth="111.0" layoutX="329.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../icon/block_share.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_block_mic" fitHeight="29.0" fitWidth="111.0" layoutX="499.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../icon/block_mic.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
